@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAVECREW</title>
+    <link rel="stylesheet" href="chatgpt.css">
+    <style>
+        /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+/* Side Navbar */
+.side-navbar {
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.side-navbar h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.side-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-navbar ul li {
+    margin: 15px 0;
+}
+
+.side-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.side-navbar ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Background Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 10s; /* Delay of 10 seconds */
+}
+
+.overlay-text h1, .overlay-text p {
+    margin: 0;
+}
+
+/* Apply fade out effect */
+.overlay-text.fade-out {
+    opacity: 0;
+}
+
+/* Containers */
+.container, .container2, .container3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+.order {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-container">
+        <video class="background-video" autoplay muted loop>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+            <h1>Order your favourite food now</h1>
+            <p>CraveCrew offers an irresistible range of services, from basic munching snacks to mouthwatering desserts.<br><br>
+               We're not just another food platform; we're your passport to a world of flavors.<br><br>
+               Sign up now to experience exclusive deals and discounts.<br><br>
+               CraveCrew—where your cravings meet their match!</p>
+        </div>
+    </div>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <h2>CRAVECREW</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Navigation Bar -->
+        <div class="nav">
+            <div class="logo"><h2> CRAVECREW</h2></div>
+            <div class="navlinks">
+                <ul>
+                    <li><a class="navborder" href="#">Home</a></li>
+                    <li><a class="navborder" href="#">About Us</a></li>
+                    <li><a class="navborder" href="#">Contact</a></li>
+                    <li><a class="navborder" href="#">My Cart</a></li>
+                    <li><a class="navborder" href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1> About CraveCrew</h1>
+            <img class="pizza" src="official logo.jpg" width="500px">
+            <div class="AboutMyFood">
+                <h3> Welcome to CraveCrew, your ultimate destination for all things delicious at Chitkara University!<br><br>
+                    We're a passionate team of four—Pranjal, Prerna, Piyush, and Pramod—bringing together all your favorite campus food outlets in one easy-to-use platform.<br><br>
+                    CraveCrew simplifies your food ordering experience, allowing you to explore a variety of cuisines and flavors.<br><br>
+                    No more juggling between multiple portals; with CraveCrew, you're just a few clicks away from satisfying your cravings.<br><br>
+                    Join us in redefining the campus dining experience!</h3>
+            </div>
+        </div>
+
+        <div class="container3">
+            <h1> Our Best Combos</h1>
+            <div class="combos">
+                <div class="combo1">
+                    <h2>$99</h2>
+                    <img src="burger.png" width="300px" style="margin:30px 0 30px 0">
+                    <ul>
+                        <li>1 cheese burger</li>
+                        <li>small sized pizza</li>
+                        <li>Pepsi 500ml</li>
+                    </ul>
+                    <a class="buy" href="#">Order Now</a>
+                </div>
+
+                <div class="combo2">
+                    <h2>$99</h2>
+                    <img src="combo1.png" width="300px" style="margin:30px 0 30px 0">
+                    <ul>
+                        <li>1 cheese burger</li>
+                        <li>2 small sized pizzas</li>
+                        <li>3 Pepsi 500ml</li>
+                    </ul>
+                    <a class="buy" href="#">Order Now</a>
+                </div>
+
+                <div class="combo3">
+                    <h2>$99</h2>
+                    <img src="combo2.png" width="300px" style="margin:30px 0 30px 0">
+                    <ul>
+                        <li>1 cheese burger</li>
+                        <li>4 small sized pizzas</li>
+                        <li>5 Pepsi 500ml</li>
+                    </ul>
+                    <a class="buy" href="#">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h1>Got some queries? Feel free to contact us</h1>
+            <div class="form">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+                <input type="number" placeholder="mobile no">
+                <textarea placeholder="your message here" id="text-area" rows="5" cols="10"></textarea>
+                <a class="query" href="#">Submit Query</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer1"><h1>CraveCrew</h1></div>
+            <div class="footer2">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Order Food</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h2>Our Page</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+                <div class="credit">
+                    <p>Copyright 2022 CraveCrew All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.overlay-text').classList.add('fade-out');
+            }, 10000); // 10 seconds delay
+        };
+    </script>
+</body>
+</html>

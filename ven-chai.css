@@ -1,0 +1,128 @@
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b5f93;
+}
+
+.nav {
+    background-color: #343a40;
+    padding: 15px;
+    color: white;
+}
+
+.nav .navlinks a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav .navlinks a:hover {
+    text-decoration: underline;
+}
+
+.nav .logo h2 {
+    color: #f0ad4e;
+    margin: 0;
+}
+
+/* Venkys Section */
+.section-venkys {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.section-venkys h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-venkys p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.section-venkys img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Chai Nagri Section */
+.section-chai-nagri {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.section-chai-nagri h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-chai-nagri p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.section-chai-nagri img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+}
+
+.footer p {
+    color: #dcdcdc;
+    font-size: 14px;
+}

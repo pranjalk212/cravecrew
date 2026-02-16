@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraveCrew - Order Your Favorite Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chatgpt.css">
+</head>
+<body>
+    <div class="nav d-flex align-items-center justify-content-between">
+        <!-- Logo Section -->
+        <div class="logo d-flex align-items-center">
+            <img src="official logo.jpg" alt="CraveCrew Logo" class="nav-logo">
+            <h2 class="ms-2">CRAVECREW</h2>
+        </div>
+        <!-- Navigation Links -->
+        <div class="navlinks">
+            <ul class="d-flex list-unstyled mb-0">
+                <li><a class="navborder" href="#">Home</a></li>
+                <li><a class="navborder" href="about.html">About Us</a></li>
+                <li><a class="navborder" href="#">Contact</a></li>
+                <li><a class="navborder" href="#">My Cart</a></li>
+                <li><a class="navborder" href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+       <!-- Hero Section -->
+       <section id="home" class="bg-dark text-light text-center py-5">
+        <div class="container">
+           <div class="um"><h1 class="display-4">Welcome to CraveCrew</h1>
+            <p class="lead">Order your favorite meals with just a few clicks!</p></div>
+            <a href="#menu" class="btn btn-warning btn-lg">Order Now</a>
+        </div>
+    </section>
+	
+   
+<hr id="a">
+
+
+   <!-- About Us Section with Background Video and Audio -->
+<section id="about" class="about-section position-relative text-light text-center py-5">
+    <video id="aboutVideo" autoplay loop playsinline class="about-bg-video">
+        <source src="Website videos/VID_20241013_171039.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id= "stop" class="about-overlay d-flex flex-column justify-content-center align-items-center">
+        <h2 id="pdf" class="display-4">CraveCrew</h2>
+        <p id="sheesh" class="lead px-4">
+            Craving Satisfaction? CraveCrew Delivers<br></p>
+          <p id="whaa">  Satisfy Your Hunger, Anytime, Anywhere at Chitkara!
+        </p>
+        <button id="toggleSound" class="btn btn-warning mt-3">Play with Sound</button>
+    </div>
+</section>
+
+
+
+<div id="menu" class="container py-5">
+    <h2 class="text-center mb-5">Our Best-Selling Combos</h2>
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="burger.png" alt="Burger Combo" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Aloo tikki burger+fries+loca 250ml</h3>
+                    <p> Includes 1 tikki Burger, French Fries, loca(250ml)</p>
+                    <button  class="btn btn-warning">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="combo1.png" alt="Pizza Combo" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Pizza Combo</h3>
+                    <p>$129 | Includes 2 Small Pizzas, 1 Garlic Bread, 2 Pepsi</p>
+                    <a href="about.html" class="btn btn-warning">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="combo2.png" alt="Family Feast" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Family Feast</h3>
+                    <p>$199 | Includes 4 Pizzas, 3 Burgers, 3 Pepsi</p>
+                    <button class="btn btn-warning">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact-us py-5" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Got Questions? Feel Free to Contact Us!</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Your Mobile</label>
+                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-lg w-100">Submit Query</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>© 2024 CraveCrew. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<script>
+    // Select the video element and toggle button
+    const aboutVideo = document.getElementById("aboutVideo");
+    const toggleSound = document.getElementById("toggleSound");
+
+    // Mute the video by default
+    aboutVideo.muted = true;
+
+    // Add event listener to the button
+    toggleSound.addEventListener("click", () => {
+        if (aboutVideo.muted) {
+            aboutVideo.muted = false; // Unmute the video
+            toggleSound.textContent = "Mute Sound"; // Update button text
+        } else {
+            aboutVideo.muted = true; // Mute the video
+            toggleSound.textContent = "Play with Sound"; // Update button text
+        }
+    });
+</script>
+
+
+ <!-- Pagination Section -->
+ <div class="pagination-container">
+    <ul class="pagination">
+        <li class="page-item"><a href="#tab1" class="page-link">Venky's</a></li>
+        <li class="page-item"><a href="#tab2" class="page-link">ChaiNagri</a></li>
+        <li class="page-item"><a href="#tab3" class="page-link">Resto-U</a></li>
+    </ul>
+</div>

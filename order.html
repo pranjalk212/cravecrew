@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - CraveCrew</title>
+    <link rel="stylesheet" href="ordernow.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav d-flex align-items-center justify-content-between">
+        <div class="logo d-flex align-items-center">
+            
+            <h2 class="ms-2">CRAVECREW</h2>
+        </div>
+        <div class="navlinks">
+            <ul class="d-flex list-unstyled mb-0">
+                <li><a class="navborder" href="home.html">Home</a></li>
+                <li><a class="navborder" href="home.html#contact">Contact</a></li>
+                <li><a class="navborder" href="login.html">Login</a></li>
+                <li><a class="navborder" href="about.html">Website Creators</a></li>
+                <li><a class="navborder" href="ven-chai.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section with Background Video -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="toconvert/IMG_5094.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Place Your Order</h1>
+            <p>Delicious food delivered right to your doorstep!</p>
+        </div>
+    </section>
+
+    <div class="qr-code-container d-flex flex-column align-items-center justify-content-center my-5">
+        <h3 class="mb-3">Scan to Pay</h3>
+        <img src="non-veg burgers/qr.jpg" alt="QR Code for Payment" class="img-fluid" style="max-width: 200px; border: 2px solid #ffa500; border-radius: 10px;">
+        <p class="text-muted mt-2">Use your preferred UPI app to scan and complete your payment.</p>
+    </div>
+    
+    <!-- User Details Form -->
+    <section class="order-form">
+        <h2>Customer Details</h2>
+        <form action="c.html" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="name"> Selected Item:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your desired item">
+            </div>
+            <div class="form-group">
+                <label for="name"> Mode of Payment:</label>
+                <input type="text" id="name" name="name" value="Online Payment">
+            </div>
+            <a href="c.html" type="submit" class="submit-btn">Place Order</a>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CraveCrew. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Automatically populate item name and price based on URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const item = urlParams.get('item') || "Selected Item Name";
+        const price = urlParams.get('price') || "Item Price";
+        document.getElementById('order-item').textContent = item;
+        document.getElementById('order-price').textContent = price;
+    </script>
+</body>
+</html>
+
+<!-- Pagination Section -->
+<div class="pagination-container">
+    <ul class="pagination">
+        <li class="page-item"><a href="venkys.html" class="page-link">Venky's</a></li>
+        <li class="page-item"><a href="chainagri.html" class="page-link">ChaiNagri</a></li>
+        
+    </ul>
+</div>

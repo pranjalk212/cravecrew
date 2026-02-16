@@ -1,0 +1,118 @@
+        body {
+            background-color: #d36d07;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .nav {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h2 {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .navlinks ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navlinks a:hover {
+            color: #ffc107;
+        }
+
+        /* Hero Section */
+        .about-hero {
+            background: url('burger.png') center/cover no-repeat; /* Replace with actual path */
+            height: 300px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #ffc107;
+        }
+
+        /* About Section */
+        .about-section {
+            animation: slideInLeft 1.2s ease-in-out;
+        }
+
+        .about-section img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Team Section */
+        .team-section .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-section .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-section .card-title {
+            color: #ff5722;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+
+        

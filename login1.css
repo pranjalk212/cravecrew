@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #ff5722, #ffc107);
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.nav {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #ffc107;
+}
+
+/* Login Form Styling */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.login-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: slideUp 1.2s ease;
+}
+
+.login-card h3 {
+    text-align: center;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid #ffc107;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff5722;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: #ff5722;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e64a19;
+}
+
+.btn-link {
+    color: #ff5722;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #e64a19;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Pagination Container */
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222; /* Dark background to blend with theme */
+    border-top: 2px solid #ff9800; /* Orange top border for accent */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+/* Pagination List */
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 15px; /* Space between tabs */
+    justify-content: center; /* Center alignment */
+}
+
+/* Pagination Items */
+.page-item {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#a{background-color: orange;}
+/* Pagination Links */
+.page-link {
+    text-decoration: none;
+    color: #ff9800; /* Orange text to match theme */
+    padding: 10px 20px;
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 30px; /* Rounded corners for a pill shape */
+    transition: all 0.3s ease; /* Smooth transitions */
+    background-color: transparent; /* Transparent background */
+    display: inline-block;
+}
+
+/* Hover Effects */
+.page-link:hover {
+    background-color: #ff9800; /* Orange background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow on hover */
+}
+
+/* Active Tab Style */
+.page-item.active .page-link {
+    background-color: #ff9800; /* Orange background */
+    color: #fff; /* White text */
+    border-color: #ff9800; /* Orange border */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow */
+}

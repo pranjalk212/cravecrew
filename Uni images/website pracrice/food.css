@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: arial, helvetica,sans-serif ;
+
+}
+
+.nav{
+    background-color: crimson;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-size: 20;
+    cursor: pointer;
+}
+
+
+.navlinks{
+    float:right;
+    padding-right:30px;
+    cursor: pointer;
+}
+.navlinks ul li
+{display:inline-block;
+    padding-right: 30px;
+    cursor:pointer;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 17;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+.navborder::after
+{ 
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navborder:hover::after{
+    width: 100%;
+}
+
+.container{
+    background-image: linear-gradient(to top, rgba(145,146,122,0.62),rgba(145,146,122,0.2)),url("pizza.png");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+height: 695px;
+text-align: center;
+}
+
+.container h1 
+{
+    font-size: 100;
+    padding-top: 120px;
+    color: white;
+}
+.container p
+{
+color:aliceblue;
+padding-top: 50px;
+}
+
+.order
+{
+    background-color: crimson;
+    padding: 15px 10px;
+    border:none;
+    font-size:15;
+    border-radius: 3px;
+    margin-top: 60px;
+    transition: 0.2s ease;
+}
+
+
+
+.order a 
+{
+    text-decoration: none;
+    caret-color: white;
+}
+
+.order:hover
+{
+    padding: 20px 15px;
+}
+
+
+.container2
+{margin:30px 20px;
+border: 2px solid crimson;}
+
+.pizza
+{
+padding: 30px 60px;
+margin: 10px o o 40px;
+
+}
+
+.container2 h1
+{
+    color: crimson;
+}
+
+.container2 h3
+{
+    color: crimson;
+}
+
+.Aboutmyfood
+{
+    display: flex;
+    float: right;
+    margin: 50px 100px 0 0;
+}
+
+.container3
+{
+    border:2px solid crimson;
+    margin: 30px 20px;
+    padding-bottom: 150px;
+}
+.container3 h1{
+
+    text-align: center;
+    color: crimson;
+    margin-top: 15px;
+}
+.combos
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+margin-top: 80px;
+}
+
+.combos h2
+{
+    color:crimson;
+}
+
+
+.combo1,.combo2,.combo3{
+    border: 2px solid crimson;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+
+.combos ul li{
+list-style-type: none;
+line-height: 40px;
+}
+
+.buy
+{margin-top: 30px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: crimson;
+    transition: 0.2s ease;
+
+
+}
+
+
+.buy:hover{
+    background-color: rgb(178,20,52);
+
+}
+
+.contact{
+    border: 2px solid crimson;
+ margin: 30px 20px;
+text-align: center;}
+
+.contact h1{
+    padding-top: 30px;
+    color:crimson
+}
+
+
+
+.form
+{display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;}
+
+
+input[type=text]{
+    margin: 10px auto 30px auto;
+width: 400px;
+padding: 7px 5px;
+border: 2px solid crimson;
+
+border-radius: 3px;
+}
+
+
+input[type=email]{
+    margin: 10px auto 30px auto;
+width: 400px;
+padding: 7px 5px;
+border: 2px solid crimson;
+
+border-radius: 3px;
+}
+
+
+
+
+input[type=number]{
+    margin: 10px auto 30px auto;
+width: 400px;
+padding: 7px 5px;
+border: 2px solid crimson;
+
+border-radius: 3px;
+}
+
+input[type=text]{
+    margin: 10px auto 30px auto;
+width: 400px;
+padding: 7px 5px;
+border: 2px solid crimson;
+
+border-radius: 3px;
+}
+
+
+.form textarea{
+    margin: 10px auto 30px auto;
+width: 400px;
+height: 250px;
+padding: 7px 5px;
+border: 2px solid crimson;
+
+border-radius: 3px;
+}
+
+.query
+{
+    padding: none;
+    background-color: crimson;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+
+.query a{
+    color:white;
+    text-decoration:  none;
+
+}
+ .query:hover{
+    background-color:rgb(178,20,52); 
+ }
+
+
+
+.footer{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+background-color: rgb(178,20,52);
+justify-content: space-around;}
+
+
+.footer1 h1,.footer2 h2,.footer3 h2,.credit p{
+    color: white;
+}
+
+.footer2 ul,.footer3 ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+ .footer2 ul li a,.footer3 ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+
+.footer2 ul li a:hover,.footer3 ul li a:hover{
+    color:aliceblue;
+}
+
+
+
+
+
+.navlinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navlinks ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.footer1 h1, .footer2 h2, .footer3 h2 {
+    margin: 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #f1f1f1;
+}

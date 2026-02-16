@@ -1,0 +1,508 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+
+/* Navbar */
+/* Navbar Logo */
+.nav-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Navbar Text Alignment */
+.logo h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #fff; /* Adjust for your navbar theme */
+    display: inline-block;
+}
+
+/* Navbar Links */
+.navlinks ul {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #fff; /* Adjust for your theme */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #ffc107; /* Highlight color on hover */
+}
+
+/* Navbar Styling */
+.nav {
+    padding: 10px 20px;
+    background-color: #333; /* Adjust to your theme */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Parallax Section */
+.parallax {
+    position: relative;
+    
+    background-attachment: fixed; /* Enables parallax scrolling */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+	/* Hero Section */
+	
+	/* Hero Section */
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('khananana.jpg') center/cover no-repeat;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Buttons */
+button, .btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #FF5733; /* Change to a bright orange */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.um{
+    font-size: 1.5rem;
+    margin: 20px 0;
+    animation: colorChange 8s linear infinite;
+    transition: color 0.5s ease-in-out;
+}
+ #menu .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.5s ease;}
+
+    #menu .btn:hover {
+        transform: scale(1.1);
+        background-color: darkorange;
+    }
+
+    @keyframes colorChange {
+        0% {
+            color: #fff;
+        }
+        25% {
+            color: orange;
+        }
+        50% {
+            color: lightgreen;
+        }
+        75% {
+            color: skyblue;
+        }
+        100% {
+            color: #fff;
+        }
+    }
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 1; /* Place above the background */
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.order-now-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+
+#pdf{
+    font-size: 4.5rem;
+    font-weight: 800;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#sheesh{
+    font-size: 1.8rem;
+    color: orange;
+    font-style: italic;
+    animation: fadeIn 3s ease-in-out 1s;
+}
+
+#whaa{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: lightgray;
+    margin-bottom: 30px;
+    animation: fadeIn 4s ease-in-out 2s;
+}
+
+#about .btn {
+    font-size: 1.3rem;
+    padding: 12px 35px;
+    font-weight: bold;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+#about .btn:hover {
+    transform: scale(1.1);
+    background-color: darkorange;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.order-now-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.order-now-btn:hover {
+    background-color: #e67e22;
+}
+
+    
+    /* Buttons */
+    button, .btn {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    button:hover, .btn:hover {
+        background-color: #FF5733; /* Change to a bright orange */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+/* Menu Cards Container */
+.menu-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Image */
+.menu-card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-card-img {
+    transform: scale(1.1);
+}
+
+/* Card Content */
+.menu-card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.menu-card:hover .menu-card-content {
+    background: rgba(255, 152, 0, 0.9); /* Orange hover effect */
+}
+
+.menu-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.menu-card-content button {
+    font-size: 0.9rem;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-card-content button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 152, 0, 0.8)), url('contact-bg.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+    color: white;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e68900;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 30px 0;
+    }
+
+    .contact-us h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form .form-control,
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+
+/* Background Video Styles */
+.about-section {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the video fills the section */
+    z-index: -1; /* Places the video behind content */
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black overlay */
+    z-index: 1; /* Ensures text appears above the video */
+    color: #fff; /* Ensures text is readable */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds a slight shadow to text for better readability */
+}
+
+/* Typography Styles */
+.about-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#toggleSound {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#toggleSound:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pagination Container */
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222; /* Dark background to blend with theme */
+    border-top: 2px solid #ff9800; /* Orange top border for accent */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+/* Pagination List */
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 15px; /* Space between tabs */
+    justify-content: center; /* Center alignment */
+}
+
+/* Pagination Items */
+.page-item {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#a{background-color: orange;}
+/* Pagination Links */
+.page-link {
+    text-decoration: none;
+    color: #ff9800; /* Orange text to match theme */
+    padding: 10px 20px;
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 30px; /* Rounded corners for a pill shape */
+    transition: all 0.3s ease; /* Smooth transitions */
+    background-color: transparent; /* Transparent background */
+    display: inline-block;
+}
+
+/* Hover Effects */
+.page-link:hover {
+    background-color: #ff9800; /* Orange background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow on hover */
+}
+
+/* Active Tab Style */
+.page-item.active .page-link {
+    background-color: #ff9800; /* Orange background */
+    color: #fff; /* White text */
+    border-color: #ff9800; /* Orange border */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow */
+}

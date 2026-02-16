@@ -1,0 +1,241 @@
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.nav {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 50px;
+    height: auto;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qr-code-container {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Horizontal alignment */
+    justify-content: center; /* Vertical alignment */
+    min-height: 300px; /* Optional: Sets a minimum height for better spacing */
+    text-align: center; /* Centers text inside the container */
+}
+
+.qr-code-container h3 {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.qr-code-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.qr-code-container img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.qr-code-container p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* Order Summary Section */
+.order-summary {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-item p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Order Form Section */
+.order-form {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Pagination Container */
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222; /* Dark background to blend with theme */
+    border-top: 2px solid #ff9800; /* Orange top border for accent */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+/* Pagination List */
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 15px; /* Space between tabs */
+    justify-content: center; /* Center alignment */
+}
+
+/* Pagination Items */
+.page-item {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#a{background-color: orange;}
+/* Pagination Links */
+.page-link {
+    text-decoration: none;
+    color: #ff9800; /* Orange text to match theme */
+    padding: 10px 20px;
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 30px; /* Rounded corners for a pill shape */
+    transition: all 0.3s ease; /* Smooth transitions */
+    background-color: transparent; /* Transparent background */
+    display: inline-block;
+}
+
+/* Hover Effects */
+.page-link:hover {
+    background-color: #ff9800; /* Orange background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow on hover */
+}
+
+/* Active Tab Style */
+.page-item.active .page-link {
+    background-color: #ff9800; /* Orange background */
+    color: #fff; /* White text */
+    border-color: #ff9800; /* Orange border */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Orange shadow */
+}
