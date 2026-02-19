@@ -17,7 +17,7 @@ body {
 /* Navbar Logo */
 .nav-logo {
     width: 50px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     display: inline-block;
     opacity: 1;
 }
