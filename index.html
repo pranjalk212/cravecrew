@@ -3,52 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro Page</title>
-    <link rel="stylesheet" href="introo.css">
+    <title>CraveCrew - Order Your Favorite Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home1.css">
 </head>
 <body>
+    <div class="nav d-flex align-items-center justify-content-between">
+        
+        <div class="logo d-flex align-items-center">
+            
+            <h2 class="ms-2">CRAVECREW</h2>
+        </div>
+        <form class="d-flex" role="search">
+            <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">Search</button>
+        </form>
+
+      
+        <div class="navlinks">
+            <ul class="d-flex list-unstyled mb-0">
+                
+                <li><a class="navborder" href="home.html">Home</a></li>
+                <li><a class="navborder" href="#contact">Contact</a></li>
+                <li><a class="navborder" href="login.html">Login</a></li>
+                <li><a class="navborder" href="about.html">Website Creators</a></li>
+                <li><a class="navborder" href="ven-chai.html">About</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
     
-    <div class="video-container">
-        <video autoplay muted loop>
-            <source src="Website videos/uni tour.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="overlay">
-            <div class="intro-text">
-                <h1>Chitkara University Presents</h1>
-                <h2>CRAVECREW</h2>
-                <button onclick="window.location.href='home.html'">Explore CraveCrew</button>
+
+       <section id="home" class="bg-dark text-light text-center py-5">
+        <div class="container">
+           <div class="um"><h1 class="display-4">Welcome to CraveCrew</h1>
+            <p class="lead">Order your favorite meals with just a few clicks!</p></div>
+            <a href="#menu" class="btn btn-warning btn-lg">Order Now</a>
+        </div>
+    </section>
+	
+   
+<hr id="a">
+
+
+   
+<section id="about" class="about-section position-relative text-light text-center py-5">
+    <video id="aboutVideo" autoplay loop playsinline class="about-bg-video">
+        <source src="Website videos/VID_20241013_171039.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id= "stop" class="about-overlay d-flex flex-column justify-content-center align-items-center">
+        <h2 id="pdf" class="display-4">CraveCrew</h2>
+        <p id="sheesh" class="lead px-4">
+            Craving Satisfaction? CraveCrew Delivers<br></p>
+          <p id="whaa">  Satisfy Your Hunger, Anytime, Anywhere at Chitkara!
+        </p>
+        <button id="toggleSound" class="btn btn-warning mt-3">Play with Sound</button>
+    </div>
+</section>
+
+
+
+<div id="menu" class="container py-5">
+    <h2 class="text-center mb-5">Our Best-Sellers</h2>
+    <div class="row g-4">
+    
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="non-veg burgers/spicy wings.jpg" alt="Hot & Spicy Chicken Wings" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Hot & Spicy Chicken Wings</h3>
+                    <p>Rs 220.00 | Includes 1 full plate chicken wings</p>
+                    <a href="non veg lite bites.html" class="btn btn-warning">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="non-veg burgers/marble.jpg" alt="Marble Cake" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Marble Cake</h3>
+                    <p>Rs 59.00| Includes 1 mini marble cake</p>
+                    <a href="brownie jar.html" class="btn btn-warning">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="non-veg burgers/saslsa.cms" alt="Mexican Salsa Nachos" class="menu-card-img">
+                <div class="menu-card-content">
+                    <h3>Mexican Salsa Nachos</h3>
+                    <p>Rs 99.00 | Includes 1 full plate nachos</p>
+                    <a href="nachos.html" class="btn btn-warning">Order Now</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-   
-    <div class="image-scroller">
-        <div class="image-wrapper">
-            <img src="Uni images/IMG-20241126-WA0034.jpg" alt="Campus 1">
-            <img src="Uni images/IMG-20241126-WA0031.jpg" alt="Campus 2">
-            <img src="Uni images/IMG_20241126_221918.jpg" alt="Campus 3">
-            <img src="Uni images/IMG-20241126-WA0029.jpg" alt="Campus 4">
-            <img src="Uni images/IMG-20241126-WA0030.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221900.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221841.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221800.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221742.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221726.jpg" alt="Campus 5">
-            <img src="Uni images/c1.webp" alt="Campus 5">
-            <img src="Uni images/c2.jpeg" alt="Campus 5">
-            <img src="Uni images/c3.jpg" alt="Campus 5">
-            <img src="Uni images/c4.jpg" alt="Campus 5">
-            <img src="Uni images/c5.jpg" alt="Campus 5">
-           
-            <img src="Uni images/IMG-20241126-WA0031.jpg" alt="Campus 1">
-            <img src="Uni images/IMG-20241126-WA0033.jpg" alt="Campus 2">
-            <img src="Uni images/IMG-20241126-WA0034.jpg" alt="Campus 3">
-            <img src="Uni images/IMG_20241126_221943.jpg" alt="Campus 4">
-            <img src="Uni images/IMG_20241126_221918.jpg" alt="Campus 5">
-            <img src="Uni images/IMG_20241126_221900.jpg" alt="Campus 5">
-            
+
+<div class="contact-us py-5" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Got Questions? Feel Free to Contact Us!</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Your Mobile</label>
+                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-lg w-100">Submit Query</button>
+                </form>
+            </div>
         </div>
     </div>
+</div>
+
+ 
+    <footer class="bg-dark text-light text-center py-3">
+        <p>© 2024 CraveCrew. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+<script>
+ 
+    const aboutVideo = document.getElementById("aboutVideo");
+    const toggleSound = document.getElementById("toggleSound");
+
+    aboutVideo.muted = true;
+
+    toggleSound.addEventListener("click", () => {
+        if (aboutVideo.muted) {
+            aboutVideo.muted = false; 
+            toggleSound.textContent = "Mute Sound"; 
+        } else {
+            aboutVideo.muted = true; 
+            toggleSound.textContent = "Play with Sound"; 
+        }
+    });
+</script>
+
+
+
+ <div class="pagination-container">
+    <ul class="pagination">
+        <li class="page-item"><a href="venkys.html" class="page-link">Venky's</a></li>
+        <li class="page-item"><a href="chainagri.html" class="page-link">ChaiNagri</a></li>
+        
+    </ul>
+</div>
